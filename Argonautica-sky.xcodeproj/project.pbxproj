@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10193923252A4360001E9E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10193922252A4360001E9E3E /* AppDelegate.swift */; };
+		10193925252A4360001E9E3E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 10193924252A4360001E9E3E /* art.scnassets */; };
+		10193927252A4360001E9E3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10193926252A4360001E9E3E /* ViewController.swift */; };
+		1019392A252A4360001E9E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10193928252A4360001E9E3E /* Main.storyboard */; };
+		1019392C252A4362001E9E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1019392B252A4362001E9E3E /* Assets.xcassets */; };
+		1019392F252A4362001E9E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1019392D252A4362001E9E3E /* LaunchScreen.storyboard */; };
+		1019393A252A4362001E9E3E /* Argonautica_skyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10193939252A4362001E9E3E /* Argonautica_skyTests.swift */; };
+		10193945252A4362001E9E3E /* Argonautica_skyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10193944252A4362001E9E3E /* Argonautica_skyUITests.swift */; };
+		10D63D14252A48060073F26A /* N2YOSatellite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D63D13252A48060073F26A /* N2YOSatellite.swift */; };
+		4243412F8119CE36370940FD /* Pods_Argonautica_sky_Argonautica_skyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22595EA8E65759B1996F9BD2 /* Pods_Argonautica_sky_Argonautica_skyUITests.framework */; };
+		9E683A8F0A9614FB3435A826 /* Pods_Argonautica_sky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D162B070B4726F2E3C692C1 /* Pods_Argonautica_sky.framework */; };
+		CD7CCC4205DBE09564174CE7 /* Pods_Argonautica_skyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC6388229059DDE45BEE74B /* Pods_Argonautica_skyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10193936252A4362001E9E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10193917252A4360001E9E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1019391E252A4360001E9E3E;
+			remoteInfo = "Argonautica-sky";
+		};
+		10193941252A4362001E9E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10193917252A4360001E9E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1019391E252A4360001E9E3E;
+			remoteInfo = "Argonautica-sky";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F8533FEE0EABA618584EB5D /* Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig"; path = "Target Support Files/Pods-Argonautica-sky-Argonautica-skyUITests/Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1019391F252A4360001E9E3E /* Argonautica-sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Argonautica-sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10193922252A4360001E9E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10193924252A4360001E9E3E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		10193926252A4360001E9E3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10193929252A4360001E9E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1019392B252A4362001E9E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1019392E252A4362001E9E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10193930252A4362001E9E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10193935252A4362001E9E3E /* Argonautica-skyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Argonautica-skyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10193939252A4362001E9E3E /* Argonautica_skyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argonautica_skyTests.swift; sourceTree = "<group>"; };
+		1019393B252A4362001E9E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10193940252A4362001E9E3E /* Argonautica-skyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Argonautica-skyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10193944252A4362001E9E3E /* Argonautica_skyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argonautica_skyUITests.swift; sourceTree = "<group>"; };
+		10193946252A4362001E9E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D63D13252A48060073F26A /* N2YOSatellite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = N2YOSatellite.swift; sourceTree = "<group>"; };
+		22595EA8E65759B1996F9BD2 /* Pods_Argonautica_sky_Argonautica_skyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Argonautica_sky_Argonautica_skyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4ABD8AF037DE5707838F23 /* Pods-Argonautica-skyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argonautica-skyTests.debug.xcconfig"; path = "Target Support Files/Pods-Argonautica-skyTests/Pods-Argonautica-skyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D162B070B4726F2E3C692C1 /* Pods_Argonautica_sky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Argonautica_sky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62371570495B70CE3CFBBC0F /* Pods-Argonautica-sky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argonautica-sky.release.xcconfig"; path = "Target Support Files/Pods-Argonautica-sky/Pods-Argonautica-sky.release.xcconfig"; sourceTree = "<group>"; };
+		7EC6388229059DDE45BEE74B /* Pods_Argonautica_skyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Argonautica_skyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A379988905DF3B2273A1C073 /* Pods-Argonautica-sky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argonautica-sky.debug.xcconfig"; path = "Target Support Files/Pods-Argonautica-sky/Pods-Argonautica-sky.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D1D2DDE23CA0EA0CF285CD /* Pods-Argonautica-skyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argonautica-skyTests.release.xcconfig"; path = "Target Support Files/Pods-Argonautica-skyTests/Pods-Argonautica-skyTests.release.xcconfig"; sourceTree = "<group>"; };
+		F50390778DF24B90CFDA2919 /* Pods-Argonautica-sky-Argonautica-skyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argonautica-sky-Argonautica-skyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Argonautica-sky-Argonautica-skyUITests/Pods-Argonautica-sky-Argonautica-skyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1019391C252A4360001E9E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E683A8F0A9614FB3435A826 /* Pods_Argonautica_sky.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10193932252A4362001E9E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7CCC4205DBE09564174CE7 /* Pods_Argonautica_skyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1019393D252A4362001E9E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4243412F8119CE36370940FD /* Pods_Argonautica_sky_Argonautica_skyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07482BE2B5DBD06E4CE7F203 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A379988905DF3B2273A1C073 /* Pods-Argonautica-sky.debug.xcconfig */,
+				62371570495B70CE3CFBBC0F /* Pods-Argonautica-sky.release.xcconfig */,
+				F50390778DF24B90CFDA2919 /* Pods-Argonautica-sky-Argonautica-skyUITests.debug.xcconfig */,
+				0F8533FEE0EABA618584EB5D /* Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig */,
+				2B4ABD8AF037DE5707838F23 /* Pods-Argonautica-skyTests.debug.xcconfig */,
+				D5D1D2DDE23CA0EA0CF285CD /* Pods-Argonautica-skyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		10193916252A4360001E9E3E = {
+			isa = PBXGroup;
+			children = (
+				10193921252A4360001E9E3E /* Argonautica-sky */,
+				10193938252A4362001E9E3E /* Argonautica-skyTests */,
+				10193943252A4362001E9E3E /* Argonautica-skyUITests */,
+				10193920252A4360001E9E3E /* Products */,
+				07482BE2B5DBD06E4CE7F203 /* Pods */,
+				18A0AB746451FD72689B7FF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		10193920252A4360001E9E3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1019391F252A4360001E9E3E /* Argonautica-sky.app */,
+				10193935252A4362001E9E3E /* Argonautica-skyTests.xctest */,
+				10193940252A4362001E9E3E /* Argonautica-skyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10193921252A4360001E9E3E /* Argonautica-sky */ = {
+			isa = PBXGroup;
+			children = (
+				10D63D12252A47FE0073F26A /* N2YO */,
+				10193922252A4360001E9E3E /* AppDelegate.swift */,
+				10193924252A4360001E9E3E /* art.scnassets */,
+				10193926252A4360001E9E3E /* ViewController.swift */,
+				10193928252A4360001E9E3E /* Main.storyboard */,
+				1019392B252A4362001E9E3E /* Assets.xcassets */,
+				1019392D252A4362001E9E3E /* LaunchScreen.storyboard */,
+				10193930252A4362001E9E3E /* Info.plist */,
+			);
+			path = "Argonautica-sky";
+			sourceTree = "<group>";
+		};
+		10193938252A4362001E9E3E /* Argonautica-skyTests */ = {
+			isa = PBXGroup;
+			children = (
+				10193939252A4362001E9E3E /* Argonautica_skyTests.swift */,
+				1019393B252A4362001E9E3E /* Info.plist */,
+			);
+			path = "Argonautica-skyTests";
+			sourceTree = "<group>";
+		};
+		10193943252A4362001E9E3E /* Argonautica-skyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10193944252A4362001E9E3E /* Argonautica_skyUITests.swift */,
+				10193946252A4362001E9E3E /* Info.plist */,
+			);
+			path = "Argonautica-skyUITests";
+			sourceTree = "<group>";
+		};
+		10D63D12252A47FE0073F26A /* N2YO */ = {
+			isa = PBXGroup;
+			children = (
+				10D63D13252A48060073F26A /* N2YOSatellite.swift */,
+			);
+			path = N2YO;
+			sourceTree = "<group>";
+		};
+		18A0AB746451FD72689B7FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D162B070B4726F2E3C692C1 /* Pods_Argonautica_sky.framework */,
+				22595EA8E65759B1996F9BD2 /* Pods_Argonautica_sky_Argonautica_skyUITests.framework */,
+				7EC6388229059DDE45BEE74B /* Pods_Argonautica_skyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1019391E252A4360001E9E3E /* Argonautica-sky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10193949252A4362001E9E3E /* Build configuration list for PBXNativeTarget "Argonautica-sky" */;
+			buildPhases = (
+				D818FF05DE64FB68DA77C443 /* [CP] Check Pods Manifest.lock */,
+				1019391B252A4360001E9E3E /* Sources */,
+				1019391C252A4360001E9E3E /* Frameworks */,
+				1019391D252A4360001E9E3E /* Resources */,
+				C46BF768E7C36C0AEF02C69F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Argonautica-sky";
+			productName = "Argonautica-sky";
+			productReference = 1019391F252A4360001E9E3E /* Argonautica-sky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10193934252A4362001E9E3E /* Argonautica-skyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1019394C252A4362001E9E3E /* Build configuration list for PBXNativeTarget "Argonautica-skyTests" */;
+			buildPhases = (
+				AAF78E30E7BFE492DD836C35 /* [CP] Check Pods Manifest.lock */,
+				10193931252A4362001E9E3E /* Sources */,
+				10193932252A4362001E9E3E /* Frameworks */,
+				10193933252A4362001E9E3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10193937252A4362001E9E3E /* PBXTargetDependency */,
+			);
+			name = "Argonautica-skyTests";
+			productName = "Argonautica-skyTests";
+			productReference = 10193935252A4362001E9E3E /* Argonautica-skyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1019393F252A4362001E9E3E /* Argonautica-skyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1019394F252A4362001E9E3E /* Build configuration list for PBXNativeTarget "Argonautica-skyUITests" */;
+			buildPhases = (
+				F0D5418C72F01B841D6A3117 /* [CP] Check Pods Manifest.lock */,
+				1019393C252A4362001E9E3E /* Sources */,
+				1019393D252A4362001E9E3E /* Frameworks */,
+				1019393E252A4362001E9E3E /* Resources */,
+				5FDF58CF73BC2EB2835EA39D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10193942252A4362001E9E3E /* PBXTargetDependency */,
+			);
+			name = "Argonautica-skyUITests";
+			productName = "Argonautica-skyUITests";
+			productReference = 10193940252A4362001E9E3E /* Argonautica-skyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10193917252A4360001E9E3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Argonautica;
+				TargetAttributes = {
+					1019391E252A4360001E9E3E = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					10193934252A4362001E9E3E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1019391E252A4360001E9E3E;
+					};
+					1019393F252A4362001E9E3E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1019391E252A4360001E9E3E;
+					};
+				};
+			};
+			buildConfigurationList = 1019391A252A4360001E9E3E /* Build configuration list for PBXProject "Argonautica-sky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10193916252A4360001E9E3E;
+			productRefGroup = 10193920252A4360001E9E3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1019391E252A4360001E9E3E /* Argonautica-sky */,
+				10193934252A4362001E9E3E /* Argonautica-skyTests */,
+				1019393F252A4362001E9E3E /* Argonautica-skyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1019391D252A4360001E9E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10193925252A4360001E9E3E /* art.scnassets in Resources */,
+				1019392F252A4362001E9E3E /* LaunchScreen.storyboard in Resources */,
+				1019392C252A4362001E9E3E /* Assets.xcassets in Resources */,
+				1019392A252A4360001E9E3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10193933252A4362001E9E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1019393E252A4362001E9E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FDF58CF73BC2EB2835EA39D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Argonautica-sky-Argonautica-skyUITests/Pods-Argonautica-sky-Argonautica-skyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Argonautica-sky-Argonautica-skyUITests/Pods-Argonautica-sky-Argonautica-skyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Argonautica-sky-Argonautica-skyUITests/Pods-Argonautica-sky-Argonautica-skyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF78E30E7BFE492DD836C35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Argonautica-skyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46BF768E7C36C0AEF02C69F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Argonautica-sky/Pods-Argonautica-sky-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Argonautica-sky/Pods-Argonautica-sky-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Argonautica-sky/Pods-Argonautica-sky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D818FF05DE64FB68DA77C443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Argonautica-sky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D5418C72F01B841D6A3117 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Argonautica-sky-Argonautica-skyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1019391B252A4360001E9E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10193927252A4360001E9E3E /* ViewController.swift in Sources */,
+				10D63D14252A48060073F26A /* N2YOSatellite.swift in Sources */,
+				10193923252A4360001E9E3E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10193931252A4362001E9E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1019393A252A4362001E9E3E /* Argonautica_skyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1019393C252A4362001E9E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10193945252A4362001E9E3E /* Argonautica_skyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10193937252A4362001E9E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1019391E252A4360001E9E3E /* Argonautica-sky */;
+			targetProxy = 10193936252A4362001E9E3E /* PBXContainerItemProxy */;
+		};
+		10193942252A4362001E9E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1019391E252A4360001E9E3E /* Argonautica-sky */;
+			targetProxy = 10193941252A4362001E9E3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10193928252A4360001E9E3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10193929252A4360001E9E3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1019392D252A4362001E9E3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1019392E252A4362001E9E3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10193947252A4362001E9E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10193948252A4362001E9E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1019394A252A4362001E9E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A379988905DF3B2273A1C073 /* Pods-Argonautica-sky.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-sky/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-sky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1019394B252A4362001E9E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62371570495B70CE3CFBBC0F /* Pods-Argonautica-sky.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-sky/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-sky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1019394D252A4362001E9E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4ABD8AF037DE5707838F23 /* Pods-Argonautica-skyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-skyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-skyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Argonautica-sky.app/Argonautica-sky";
+			};
+			name = Debug;
+		};
+		1019394E252A4362001E9E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D1D2DDE23CA0EA0CF285CD /* Pods-Argonautica-skyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-skyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-skyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Argonautica-sky.app/Argonautica-sky";
+			};
+			name = Release;
+		};
+		10193950252A4362001E9E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50390778DF24B90CFDA2919 /* Pods-Argonautica-sky-Argonautica-skyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-skyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-skyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Argonautica-sky";
+			};
+			name = Debug;
+		};
+		10193951252A4362001E9E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8533FEE0EABA618584EB5D /* Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBP89ULS7T;
+				INFOPLIST_FILE = "Argonautica-skyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Argonautica.Argonautica-skyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Argonautica-sky";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1019391A252A4360001E9E3E /* Build configuration list for PBXProject "Argonautica-sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10193947252A4362001E9E3E /* Debug */,
+				10193948252A4362001E9E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10193949252A4362001E9E3E /* Build configuration list for PBXNativeTarget "Argonautica-sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1019394A252A4362001E9E3E /* Debug */,
+				1019394B252A4362001E9E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1019394C252A4362001E9E3E /* Build configuration list for PBXNativeTarget "Argonautica-skyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1019394D252A4362001E9E3E /* Debug */,
+				1019394E252A4362001E9E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1019394F252A4362001E9E3E /* Build configuration list for PBXNativeTarget "Argonautica-skyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10193950252A4362001E9E3E /* Debug */,
+				10193951252A4362001E9E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10193917252A4360001E9E3E /* Project object */;
+}

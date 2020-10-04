@@ -14,7 +14,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
 
-    private var satellites: [UInt] = [25544]
     private static var DISTANCE: Float = 5.0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +30,40 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
 
-        for id in satellites {
-            N2YOSatellite.getPosition(id, 44.7695, 41.6883, 0) {
-                position in
-                let x = ViewController.DISTANCE * cos(position.elevation) * cos(position.azimuth)
-                let y = ViewController.DISTANCE * sin(position.elevation)
-                let z = ViewController.DISTANCE * cos(position.elevation) * sin(position.azimuth)
+        // Add satellites
+        for (key, value) in Satellites.satellites {
+            for sat in value {
+                N2YOSatellite.getPosition(UInt(sat["norad"] as! Int), 44.7695, 41.6883, 0) {
+                    position in
+                    let x = ViewController.DISTANCE * cos(position.elevation) * cos(position.azimuth)
+                    let y = ViewController.DISTANCE * sin(position.elevation)
+                    let z = ViewController.DISTANCE * cos(position.elevation) * sin(position.azimuth)
 
-                let indicator = SCNNode(geometry: SCNSphere(radius: 0.2))
-                indicator.position = SCNVector3(x, y, z)
-                self.sceneView.scene.rootNode.addChildNode(indicator)
+                    let indicator = self.loadSatellite(key)
+                    indicator.position = SCNVector3(x, y, z)
+                    print("Added at \(x) \(y) \(z)")
+                    self.sceneView.scene.rootNode.addChildNode(indicator)
+                }
             }
         }
+    }
+    
+    func loadSatellite(_ model: String) -> SCNNode {
+        // Initialize geometry
+        let scene = SCNScene(named: "\(model).dae", inDirectory: "Models.scnassets/\(model)")!
+        let wrapper = SCNNode()
+        for node in scene.rootNode.childNodes {
+            node.geometry?.firstMaterial?.lightingModel = .constant
+            node.movabilityHint = .movable
+            wrapper.addChildNode(node)
+        }
+
+        let bbox = wrapper.boundingBox
+        let scale = 0.2 / SCNVector3.norm(bbox.max - bbox.min)
+        wrapper.position = -scale * (bbox.max + bbox.min)/2.0
+        wrapper.scale = scale * SCNVector3(1, 1, 1)
+        
+        return wrapper
     }
     
     override func viewWillAppear(_ animated: Bool) {

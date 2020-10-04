@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10041EE5252A75D1001B2FE9 /* Satellites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10041EE4252A75D1001B2FE9 /* Satellites.swift */; };
+		10041EE7252A75E3001B2FE9 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 10041EE6252A75E3001B2FE9 /* Models.scnassets */; };
+		10041EEC252A762E001B2FE9 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10041EEB252A762E001B2FE9 /* SCNVector3+Extensions.swift */; };
 		10193923252A4360001E9E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10193922252A4360001E9E3E /* AppDelegate.swift */; };
 		10193925252A4360001E9E3E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 10193924252A4360001E9E3E /* art.scnassets */; };
 		10193927252A4360001E9E3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10193926252A4360001E9E3E /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		0F8533FEE0EABA618584EB5D /* Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig"; path = "Target Support Files/Pods-Argonautica-sky-Argonautica-skyUITests/Pods-Argonautica-sky-Argonautica-skyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		10041EE4252A75D1001B2FE9 /* Satellites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Satellites.swift; sourceTree = "<group>"; };
+		10041EE6252A75E3001B2FE9 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		10041EEB252A762E001B2FE9 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
 		1019391F252A4360001E9E3E /* Argonautica-sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Argonautica-sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10193922252A4360001E9E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10193924252A4360001E9E3E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -106,6 +112,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		10041EEA252A7626001B2FE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10041EEB252A762E001B2FE9 /* SCNVector3+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		10193916252A4360001E9E3E = {
 			isa = PBXGroup;
 			children = (
@@ -131,11 +145,14 @@
 		10193921252A4360001E9E3E /* Argonautica-sky */ = {
 			isa = PBXGroup;
 			children = (
+				10041EEA252A7626001B2FE9 /* Extensions */,
 				10D63D12252A47FE0073F26A /* N2YO */,
 				10193922252A4360001E9E3E /* AppDelegate.swift */,
 				10193924252A4360001E9E3E /* art.scnassets */,
 				10193926252A4360001E9E3E /* ViewController.swift */,
+				10041EE6252A75E3001B2FE9 /* Models.scnassets */,
 				10193928252A4360001E9E3E /* Main.storyboard */,
+				10041EE4252A75D1001B2FE9 /* Satellites.swift */,
 				1019392B252A4362001E9E3E /* Assets.xcassets */,
 				1019392D252A4362001E9E3E /* LaunchScreen.storyboard */,
 				10193930252A4362001E9E3E /* Info.plist */,
@@ -291,6 +308,7 @@
 				10193925252A4360001E9E3E /* art.scnassets in Resources */,
 				1019392F252A4362001E9E3E /* LaunchScreen.storyboard in Resources */,
 				1019392C252A4362001E9E3E /* Assets.xcassets in Resources */,
+				10041EE7252A75E3001B2FE9 /* Models.scnassets in Resources */,
 				1019392A252A4360001E9E3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,8 +438,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				10193927252A4360001E9E3E /* ViewController.swift in Sources */,
+				10041EE5252A75D1001B2FE9 /* Satellites.swift in Sources */,
 				10D63D14252A48060073F26A /* N2YOSatellite.swift in Sources */,
 				10193923252A4360001E9E3E /* AppDelegate.swift in Sources */,
+				10041EEC252A762E001B2FE9 /* SCNVector3+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
